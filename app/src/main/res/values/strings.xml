@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OASIS</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="oasis_login">OASIS LOGIN</string>
+    <string name="title_activity_registration_screen">RegistrationScreen</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_select_boarding">SelectBoardingActivity</string>
+    <string name="title_activity_my_bookings">MyBookingsActivity</string>
+    <string name="title_activity_booking_details">BookingDetailsActivity</string>
+    <string name="publishablekey">pk_test_VyYdLu2prBQgNfgnkdqU9Ulu000kOechup</string>
+
+</resources>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_header" />
+
+            <LinearLayout
+                android:id="@+id/lin_lay_passenger"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_grey_border"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp">
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_hide_passenger"-->
+<!--                    android:layout_width="@dimen/_30sdp"-->
+<!--                    android:layout_height="@dimen/_30sdp"-->
+<!--                    android:padding="@dimen/_5sdp"-->
+<!--                    android:src="@drawable/cross_popup"-->
+<!--                    android:scaleType="centerInside"-->
+<!--                    android:tint="@color/blue"-->
+<!--                    android:layout_marginLeft="@dimen/_2sdp"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_passenger_heading"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="@dimen/_14sdp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_15sdp"-->
+<!--                    android:text="Add Details"/>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_white_grey_border"
+                        android:text=""
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:hint="Enter Full Name"/>
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_white_grey_border"
+                        android:text="adars123@gmail.com"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:fontFamily="sans-serif-ondensed"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:hint="Enter email id"
+                        android:textColor="@color/black_colour_ios"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/rounded_white_grey_border"
+                        android:text=""
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:inputType="phone"
+                        android:hint="Enter Phone Number"/>
+
+                    <EditText
+                        android:id="@+id/etAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_14sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_white_grey_border"
+                        android:text="30"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:fontFamily="sans-serif-ondensed"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:maxLength="3"
+                        android:hint="Enter Age"
+                        android:textColor="@color/black_colour_ios"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_white_grey_border">
+
+                        <Spinner
+                            android:id="@+id/spinner_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:text="Add"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/proceed_button" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rel_lay_upper">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_above="@+id/tv_procede_booking"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_view_passenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:visibility="visible"
+                        android:layout_margin="@dimen/_5sdp"
+                        />
+    <!--                <TextView-->
+    <!--                    android:id="@+id/tv_add_passenger"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:textSize="@dimen/_15sdp"-->
+    <!--                    android:drawableLeft="@drawable/icon_add1"-->
+    <!--                    android:text="Add Passenger"-->
+    <!--                    android:paddingBottom="@dimen/_5sdp"-->
+    <!--                    android:gravity="center_vertical"-->
+    <!--                    android:drawablePadding="@dimen/_10sdp"-->
+    <!--                    android:padding="@dimen/_5sdp"-->
+    <!--                    android:textColor="@color/black_colour_ios"/>-->
+                </LinearLayout>
+
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/rel_lay_add_passenger"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:visibility="visible"-->
+    <!--                android:layout_height="match_parent">-->
+
+    <!--                <View-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:alpha=".4"-->
+    <!--                    android:background="@color/black"/>-->
+    <!--                <LinearLayout-->
+    <!--                    android:id="@+id/lin_lay_passenger"-->
+    <!--                    android:visibility="visible"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:background="@drawable/rounded_white_grey_border"-->
+    <!--                    android:layout_alignParentBottom="true"-->
+    <!--                    android:paddingBottom="@dimen/_10sdp"-->
+    <!--                    android:paddingTop="@dimen/_5sdp">-->
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/iv_hide_passenger"-->
+    <!--                        android:layout_width="@dimen/_30sdp"-->
+    <!--                        android:layout_height="@dimen/_30sdp"-->
+    <!--                        android:padding="@dimen/_5sdp"-->
+    <!--                        android:src="@drawable/cross_popup"-->
+    <!--                        android:scaleType="centerInside"-->
+    <!--                        android:tint="@color/blue"-->
+    <!--                        android:layout_marginLeft="@dimen/_2sdp"/>-->
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/tv_passenger_heading"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:textSize="@dimen/_14sdp"-->
+    <!--                        android:textStyle="bold"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:layout_marginLeft="@dimen/_15sdp"-->
+    <!--                        android:text="Add Details"/>-->
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:paddingLeft="@dimen/_15sdp"-->
+    <!--                        android:paddingRight="@dimen/_15sdp"-->
+    <!--                        android:orientation="vertical">-->
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/tv_name"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:textSize="@dimen/_14sdp"-->
+    <!--                            android:padding="@dimen/_5sdp"-->
+    <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                            android:background="@drawable/rounded_white_grey_border"-->
+    <!--                            android:text=""-->
+    <!--                            android:singleLine="true"-->
+    <!--                            android:lines="1"-->
+    <!--                            android:hint="Enter Full Name"/>-->
+
+    <!--                        <EditText-->
+    <!--                            android:id="@+id/tv_phone"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:textSize="@dimen/_14sdp"-->
+    <!--                            android:padding="@dimen/_5sdp"-->
+    <!--                            android:layout_marginTop="@dimen/_20sdp"-->
+    <!--                            android:background="@drawable/rounded_white_grey_border"-->
+    <!--                            android:text=""-->
+    <!--                            android:maxLength="10"-->
+    <!--                            android:singleLine="true"-->
+    <!--                            android:lines="1"-->
+    <!--                            android:inputType="phone"-->
+    <!--                            android:hint="Enter Phone Number"/>-->
+
+    <!--                        <LinearLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="@dimen/_30sdp"-->
+    <!--                            android:textSize="@dimen/_16sdp"-->
+    <!--                            android:layout_marginTop="@dimen/_20sdp"-->
+    <!--                            android:orientation="horizontal"-->
+    <!--                            android:background="@drawable/rounded_white_grey_border">-->
+
+    <!--                            <Spinner-->
+    <!--                                android:id="@+id/spinner_gender"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="@dimen/_30sdp"/>-->
+    <!--                        </LinearLayout>-->
+
+    <!--                        <Button-->
+    <!--                            android:id="@+id/btnDone"-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="@dimen/_35sdp"-->
+    <!--                            android:text="Done"-->
+    <!--                            android:layout_marginTop="@dimen/_20sdp"-->
+    <!--                            android:textSize="@dimen/_15sdp"-->
+    <!--                            android:textColor="@color/white"-->
+    <!--                            android:background="@drawable/proceed_button" />-->
+    <!--                    </LinearLayout>-->
+
+    <!--                </LinearLayout>-->
+    <!--            </RelativeLayout>-->
+                <Button
+                    android:id="@+id/tv_procede_booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Procede Booking"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/proceed_button" />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

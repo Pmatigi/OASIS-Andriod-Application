@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dip"
+    android:layout_marginRight="30dip"
+
+    android:background="@drawable/custom_bg_circle_dialog"
+    android:layout_centerInParent="true">
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/black_colour_ios"-->
+        <!--android:alpha="0.6"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_colour_ios"
+                android:textAlignment="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="9876675432"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/popup_no_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Cancel"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"/>
+                <View
+                    android:id="@+id/popup_view_divider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/popup_call_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Call"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

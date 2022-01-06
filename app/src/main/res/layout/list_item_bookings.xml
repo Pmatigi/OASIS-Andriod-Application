@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lin_lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="7"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/_20sdp" />
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgrey"
+                android:text="Monday"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/_13sdp"/>
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgrey"
+                android:text="Jan 2020"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_below="@+id/lin_lay_top"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_tour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_colour_ios"
+                android:text="Noida - Indore"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp" />
+            <TextView
+                android:id="@+id/tv_bus_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Asian Express"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/tv_boarding_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Boarding point : camrun city"
+                android:paddingLeft="@dimen/_10sdp"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_1sdp"-->
+<!--        android:layout_marginTop="@dimen/_20sdp"-->
+<!--        android:background="@color/grey"/>-->
+
+</LinearLayout>

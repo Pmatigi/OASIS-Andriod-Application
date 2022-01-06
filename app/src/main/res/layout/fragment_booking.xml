@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rel_lay_header"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_60sdp"-->
+<!--            android:background="@color/blue"-->
+<!--            android:paddingRight="9.3dp"-->
+<!--            android:layout_alignParentTop="true">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lin_lay_map"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:paddingLeft="17dp"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_40sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:layout_margin="@dimen/_10sdp"-->
+<!--                    android:tint="@android:color/white"-->
+<!--                    android:src="@drawable/destinbation"-->
+<!--                    android:visibility="visible" />-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_title"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginBottom="4dp"-->
+<!--                android:text="Booking Details"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_18sdp"-->
+<!--                android:textStyle="normal" />-->
+<!--        </RelativeLayout>-->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_header" />
+
+        <LinearLayout
+            android:id="@+id/lin_lay_report_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:id="@+id/lin_lay_upcoming_booking"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/tv_upcoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Upcoming Booking"
+                    android:textColor="@color/blue"
+                    android:textSize="14.7sp"
+                    android:textStyle="normal" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp">
+                    <View
+                        android:id="@+id/view_grey_upcoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:visibility="gone"
+                        android:background="@color/grey"/>
+                    <View
+                        android:id="@+id/view_blue_upcoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:visibility="visible"
+                        android:background="@color/blue"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_lay_completed_booking"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/tv_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:textSize="14.7sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/black_colour_ios"
+                    android:gravity="center"
+                    android:text="Complete Booking"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp">
+                    <View
+                        android:id="@+id/view_blue_comp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:background="@color/blue"/>
+                    <View
+                        android:id="@+id/view_grey_comp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:visibility="visible"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:background="@color/grey"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Complete Booking"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black_colour_ios"
+            android:textSize="@dimen/_16sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_view_booking_list_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data found"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="@dimen/_22sdp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black_colour_ios"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

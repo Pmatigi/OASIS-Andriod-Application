@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/base">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lin_lay1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:background="@drawable/background_left_hover"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMonth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:capitalize="characters"
+                android:fontFamily="sans-serif"
+                android:text="Feb"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvDay1"
+                android:text="18"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="TUE"
+                android:id="@+id/tvWeekDay1"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:lines="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_white"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_lay2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/background_left_hover"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMonth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:capitalize="characters"
+                android:fontFamily="sans-serif"
+                android:text="Feb"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />/>
+
+
+            <TextView
+                android:id="@+id/tvDay2"
+                android:text="18"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:text="JUE"
+                android:id="@+id/tvWeekDay2"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:textAlignment="center"
+                android:lines="1"
+
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_green"
+                android:layout_marginTop="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_lay3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/background_middle_hover"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMonth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:capitalize="characters"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:text="Feb"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" /> />
+
+
+            <TextView
+                android:id="@+id/tvDay3"
+                android:text="18"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/> />
+            <TextView
+                android:text="JUE"
+                android:id="@+id/tvWeekDay3"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"  />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp">
+                <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_yellow"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="3 events"
+                    android:gravity="top"
+                    android:layout_marginTop="-4dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_lay4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/background_right_hover"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMonth4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:capitalize="characters"
+                android:fontFamily="sans-serif"
+                android:text="Feb"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" /> />
+
+            <TextView
+                android:id="@+id/tvDay4"
+                android:text="18"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/> />
+
+            <TextView
+                android:text="JUE"
+                android:id="@+id/tvWeekDay4"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"  />
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_green"
+                android:layout_marginTop="@dimen/_10sdp"/>/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_lay5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:background="@drawable/background_right_hover"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMonth5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:capitalize="characters"
+                android:fontFamily="sans-serif"
+                android:text="Feb"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" /> />
+
+
+            <TextView
+                android:id="@+id/tvDay5"
+                android:text="18"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/> />
+
+            <TextView
+                android:text="JUE"
+                android:id="@+id/tvWeekDay5"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:textAlignment="center"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_white"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

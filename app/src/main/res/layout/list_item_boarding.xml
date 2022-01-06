@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lin_lay_boarding1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_boarding_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_colour_ios"
+            android:text="Kashmere Gate"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/_18sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bus_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:textColor="@color/grey"
+                android:text="Volvo AC multi Axcel Semi Sleeper"
+                android:textSize="@dimen/_13sdp" />
+            <ImageView
+                android:id="@+id/iv_tick"
+                android:layout_width="30dp"
+                android:scaleType="fitCenter"
+                android:layout_height="@dimen/_15sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_approve"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_bus_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="04:30 AM - 6:30 PM"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+</LinearLayout>

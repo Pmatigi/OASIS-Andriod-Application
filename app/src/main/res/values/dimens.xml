@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="login_heading">@dimen/_18sdp</dimen>
+    <dimen name="login_field_label">@dimen/_18sdp</dimen>
+    <dimen name="login_field_edit_text">@dimen/_18sdp</dimen>
+    <dimen name="login_img_con_width">@dimen/_18sdp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

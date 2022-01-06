@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lay_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginRight="-20dp"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/gfradient_rectangle">
+            <RelativeLayout
+                android:id="@+id/rel_lay_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:id="@+id/lin_lay_back"
+                    android:layout_width="@dimen/_50sdp"
+                    android:paddingLeft="17dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/arrow"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Availiable Bus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_route"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_view_bus_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_ratings"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".4"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:id="@+id/lin_lay_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp"
+            android:visibility="visible"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_hide_ratings"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@drawable/cross_popup"
+                android:scaleType="centerInside"
+                android:tint="@color/blue"
+                android:layout_marginLeft="@dimen/_2sdp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_view_ratings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_margin="@dimen/_5sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_amenities"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".4"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:id="@+id/lin_lay__amenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_hide_amenities"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@drawable/cross_popup"
+                android:scaleType="centerInside"
+                android:tint="@color/blue"
+                android:layout_marginLeft="@dimen/_2sdp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_view__amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_margin="@dimen/_5sdp" />
+
+<!--            <GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:id="@+id/gv_amenities"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:numColumns="auto_fit"-->
+<!--                android:columnWidth="@dimen/_80sdp"-->
+<!--                android:horizontalSpacing="@dimen/_20sdp"-->
+<!--                android:verticalSpacing="@dimen/_20sdp"-->
+<!--                android:gravity="center"-->
+<!--                android:stretchMode="columnWidth">-->
+
+<!--            </GridView>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

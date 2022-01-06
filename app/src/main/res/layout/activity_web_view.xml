@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout
+        android:id="@+id/lin_lay_back"
+        android:layout_width="@dimen/_50sdp"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/cross_popup"
+            android:tint="@color/bright_blue"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
